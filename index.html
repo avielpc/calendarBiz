@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AvielPC Google Integration — תשתית לחיבור אתרי עסקים לשירותי Google באמצעות OAuth.">
+  <meta name="description" content="AvielPC Google Integration — תשתית מאובטחת לחיבור אתרי עסקים לשירותי Google באמצעות OAuth לניהול יומנים ואנשי קשר.">
   <title>AvielPC Google Integration</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -25,10 +25,10 @@
 <section class="hero">
   <div class="container hero-inner">
     <span class="eyebrow">AVIELPC · GOOGLE INTEGRATION</span>
-    <h1>חיבור מאובטח בין אתרי עסקים לשירותי Google</h1>
+    <h1>חיבור מאובטח ושקוף בין העסק שלך לשירותי Google</h1>
     <p>
-      AvielPC מספקת תשתית תוכנה המאפשרת לאתרי עסקים עצמאיים להתחבר
-      לשירותי Google באמצעות OAuth, בהתאם להרשאות שהמשתמש מאשר.
+      AvielPC מספקת תשתית תוכנה המאפשרת לאתרי עסקים להתממשק בצורה חלקה
+      לשירותי Google של המשתמשים שלהם באמצעות מנגנון OAuth רשמי ומאובטח.
     </p>
     <div class="buttons">
       <a class="button primary" href="#services">איך זה עובד</a>
@@ -39,40 +39,39 @@
 
 <section id="about" class="section">
   <div class="container narrow">
-    <span class="section-label">ABOUT</span>
+    <span class="section-label">ABOUT THE APP</span>
     <h2>מהו AvielPC Google Integration?</h2>
     <p>
-      AvielPC היא ספקית טכנולוגיה המפתחת ומתחזקת מערכות עבור עסקים.
-      שירות Google Integration מאפשר למערכות של עסקים שונים להתחבר
-      לחשבון Google של המשתמש, כאשר החיבור מתבצע מול ה-Backend של
-      המערכת העסקית הרלוונטית.
+      AvielPC היא ספקית טכנולוגיה המפתחת ומתחזקת מערכות פנימיות עבור עסקים.
+      שירות Google Integration מאפשר למערכות אלו להתחבר
+      לחשבון Google של המשתמש, לצורך סנכרון יומנים ואנשי קשר ייעודיים. החיבור מתבצע ישירות מול השרת (Backend) של
+      המערכת העסקית הרלוונטית, תוך שמירה על בידוד נתונים מוחלט.
     </p>
     <p>
-      כל עסק מפעיל אתר ומערכת משלו. AvielPC אינה מחליפה את האתר של העסק
-      ואינה משמשת כחשבון משתמש מרכזי עבור כל הלקוחות.
+      אנו מאמינים בשקיפות: AvielPC אינה משתמשת בנתונים שלך למטרות פרסום, ואינה משתפת מידע של לקוח אחד עם משנהו.
     </p>
   </div>
 </section>
 
 <section id="services" class="section soft">
   <div class="container">
-    <span class="section-label">SERVICES</span>
-    <h2>שירותי Google הנתמכים</h2>
+    <span class="section-label">REQUESTED SCOPES & SERVICES</span>
+    <h2>הרשאות ושירותי Google הנתמכים</h2>
     <div class="grid">
       <article class="card">
         <div class="card-icon">G</div>
-        <h3>Google Account</h3>
-        <p>הזדהות בסיסית באמצעות Google וקבלת מידע בסיסי שהמשתמש מאשר, כגון כתובת דוא"ל ופרטי פרופיל.</p>
+        <h3>Google Profile</h3>
+        <p>הזדהות מהירה באמצעות חשבון Google וקריאת מידע בסיסי (כתובת דוא"ל ושם פרופיל) ליצירת משתמש במערכת העסקית.</p>
       </article>
       <article class="card">
         <div class="card-icon">C</div>
         <h3>Google Calendar</h3>
-        <p>יצירה ועדכון של אירועי Calendar כחלק מהפונקציונליות העסקית שהמשתמש בחר להפעיל.</p>
+        <p>הרשאה לקריאה, יצירה ועדכון של אירועים (Events) ביומן שלך. משמש לתיאום וקביעת פגישות עסקיות אוטומטיות.</p>
       </article>
       <article class="card">
         <div class="card-icon">P</div>
         <h3>Google Contacts</h3>
-        <p>קריאה של אנשי הקשר של המשתמש כאשר תכונת Contacts מופעלת והמשתמש העניק את ההרשאה המתאימה.</p>
+        <p>הרשאת קריאה בלבד לאנשי הקשר שלך, המאפשרת איתור מהיר של לקוחות בעת שימוש במערכת העסקית לניהול לקוחות.</p>
       </article>
     </div>
   </div>
@@ -81,18 +80,17 @@
 <section id="security" class="section">
   <div class="container narrow">
     <span class="section-label">SECURITY & PRIVACY</span>
-    <h2>הפרדה ואבטחה</h2>
+    <h2>הגנה על הנתונים שלך</h2>
     <div class="security-list">
-      <div><strong>OAuth</strong><p>הגישה לחשבון Google מתבצעת באמצעות מנגנון OAuth של Google. הסיסמה של המשתמש אינה נמסרת ל-AvielPC.</p></div>
-      <div><strong>Backend</strong><p>הטיפול בהרשאות Google מתבצע בצד השרת של המערכת העסקית ולא באמצעות חשיפת Refresh Token לדפדפן.</p></div>
-      <div><strong>הפרדת לקוחות</strong><p>כל אתר עסקי ומערכת Backend של לקוח מטפלים בחיבורי Google של אותה מערכת. נתוני לקוח אינם מיועדים לשיתוף עם לקוח אחר.</p></div>
-      <div><strong>מינימום הרשאות</strong><p>המערכת מבקשת הרשאות Google בהתאם לפונקציות שהיא מספקת, ולא הרשאות שאינן נדרשות.</p></div>
+      <div><strong>OAuth 2.0 Protocol</strong><p>הגישה מתבצעת באופן רשמי דרך Google. הסיסמה שלך לעולם אינה נחשפת או נשמרת אצל AvielPC.</p></div>
+      <div><strong>Secure Backend</strong><p>אסימוני הגישה (Tokens) נשמרים בצד השרת בלבד, מוצפנים במנוחה, ואינם חשופים לדפדפן של המשתמש.</p></div>
+      <div><strong>Data Isolation (הפרדת נתונים)</strong><p>כל אתר עסקי פועל בסביבה מבודדת. נתוני Google של עסק אחד מופרדים לחלוטין מנתונים של עסקים אחרים.</p></div>
+      <div><strong>Data Deletion</strong><p>זכותך לדרוש את מחיקת הנתונים שלך בכל עת דרך המערכת העסקית או על ידי פנייה ישירה אלינו.</p></div>
     </div>
     <div class="notice">
-      <strong>Google API User Data Policy</strong>
+      <strong>Google API Services User Data Policy</strong>
       <p>
-        השימוש של AvielPC במידע המתקבל מ-Google APIs ייעשה בהתאם ל-Google API Services User Data Policy,
-        לרבות דרישות Limited Use.
+        השימוש של AvielPC במידע והעברתו לאפליקציות אחרות יהיו בהתאם ל-Google API Services User Data Policy, לרבות דרישות ה-Limited Use. נתונים לעולם לא יימכרו לצדדים שלישיים.
       </p>
     </div>
   </div>
@@ -101,10 +99,11 @@
 
 <footer>
   <div class="container footer">
-    <span>© <span id="year"></span> AvielPC</span>
+    <span>© <span id="year"></span> AvielPC. כל הזכויות שמורות.</span>
     <div>
       <a href="/privacy.html">מדיניות פרטיות</a>
       <a href="/terms.html">תנאי שימוש</a>
+      <a href="mailto:adminbizcal@gmail.com">צור קשר</a>
     </div>
   </div>
 </footer>
